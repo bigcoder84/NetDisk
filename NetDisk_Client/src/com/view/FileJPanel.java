@@ -169,6 +169,13 @@ public class FileJPanel extends JPanel {
 				}
 			}
 		});
+		downloadFile.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showConfirmDialog(MainJFrame.mainJFrame, "下载功能还未开发，实现原理与上传类似", "提示", JOptionPane.CLOSED_OPTION);
+			}
+		});
 		
 		
 		if(type.equals("dir")) {
